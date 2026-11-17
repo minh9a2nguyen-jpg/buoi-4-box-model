@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography px và rem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="typography.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <section class="box version-px">
+      <p class="label">Phiên bản px</p>
+      <h2 class="title">Rem</h2>
+      <h3 class="subtitle">Hầu gái của dinh thự Roswaal</h3>
+      <p class="text">Rem có mái tóc xanh, rất chăm chỉ và luôn trung thành với Subaru.</p>
+      <p class="small">Cỡ chữ cố định theo px.</p>
+    </section>
+
+    <section class="box version-rem">
+      <p class="label">Phiên bản rem</p>
+      <h2 class="title">Rem</h2>
+      <h3 class="subtitle">Hầu gái của dinh thự Roswaal</h3>
+      <p class="text">Rem có mái tóc xanh, rất chăm chỉ và luôn trung thành với Subaru.</p>
+      <p class="small">Cỡ chữ tính theo rem.</p>
+    </section>
+
+  </div>
+
+  <section class="explain">
+    <h2>Giải thích sự khác biệt giữa px và rem</h2>
+    <p><strong>px</strong> là đơn vị tuyệt đối: 24px luôn luôn là 24px, không phụ thuộc vào gì khác. Nếu người dùng tăng cỡ chữ mặc định trong trình duyệt, chữ dùng px vẫn không đổi.</p>
+    <p><strong>rem</strong> tính theo font-size của thẻ html (mặc định 16px). Khi html là 16px thì 1rem = 16px, 1.5rem = 24px. Nếu đổi html thành 20px thì toàn bộ chữ dùng rem tự to lên theo, còn chữ dùng px thì giữ nguyên.</p>
+    <p><strong>Kết luận:</strong> hai phiên bản trông giống hệt nhau ở 16px, nhưng rem linh hoạt hơn và thân thiện với người dùng cần chữ lớn, nên thường được khuyên dùng cho font-size.</p>
+  </section>
+
+</body>
+</html>
